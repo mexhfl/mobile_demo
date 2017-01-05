@@ -1,0 +1,40 @@
+
+第一课：Emulation 模拟器
+	谷歌浏览器开发者工具中的插件
+一：Device 设备设置
+       1. model 模型选择
+       2. resolution 分辨率设置
+       3. Device pixel ratio 像素比设置
+		  iphone5 1136*640 独立像素 568*320 物理像素 2
+       4. *Emulate mobile 模拟移动端特性
+       5. *Enable text autosizing 自动缩放字体
+       6. *Shrink to fit 缩放以适应屏幕
+二：Media 媒体查询
+三：Network 浏览器信息
+四：Sensors 传感器
+       1. Emulate touch screen 模拟移动端触摸事件
+                 --touch-events
+       2. Device Geolocation Overrides 重置地理信息
+       3. Accelerometer 模拟陀螺仪
+                 α 围绕这Z轴的旋转
+                 β 围绕这X轴的旋转
+                 γ 围绕这Y轴的旋转
+
+				 
+				 
+<meta name="viewport" content="" />
+	width [pixel_value | device-width] width 直接去设置具体数值大部分的安卓手机不支持的 但是IOS支持
+	winth大部分安卓手机不支持，IOS支持
+	user-scalable 是否允许缩放 （no||yes）	
+	initial-scale 初始比例
+	minimum-scale 允许缩放的最小比例
+	maximum-scale 允许缩放的最大比例 
+	target-densitydpi 
+	-- dpi_value 70–400 //每英寸像素点的个数
+	-- device-dpi 设备默认像素密度
+	-- high-dpi 高像素密度	
+	-- medium-dpi 中等像素密度
+	-- low-dpi 低像素密度
+	-- webkit内核已不准备再支持
+
+<meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,target-densitydpi=device-dpi" /> 

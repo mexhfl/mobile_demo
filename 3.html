@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mobile</title>
+<style>
+body{margin:0px;}
+/*#box{width:200px; height:200px; background:blue;}*/
+@media all and (min-width:1200px){
+	#box{ width:1200px; height:100px;background:blue;}
+	}
+@media all and (min-width:1024px) and (max-width:1199px){
+	#box{ width:1024px; height:100px;background:red;}
+	}
+@media all and (max-width:1023px) and (min-width:400px){
+	#box{ width:400px; height:100px;background:yellow;}
+	}
+@media all and (max-width:399px) and (min-width:220px){
+	#box{ width:220px; height:100px;background:green;}
+	}
+@media all and (max-width:219px){
+	#box{ width:100px; height:100px;background:pink;}
+	}
+    </style>
+<meta name="viewport" content="width=device-width,user-scalable=no,target-densitydpi=device-dpi,target-densitydpi=medium-dpi " /> 
+
+</head>
+
+<body>
+<div id="box">div1</div>
+
+</body>
+</html>
